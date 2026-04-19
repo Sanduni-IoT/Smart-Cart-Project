@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartCart</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <a class="logo" href="#">Smart<span>Cart</span></a>
+  <div class="header-right">
+    <button id="themeToggle">🌙 Dark</button>
+    <div id="cartCounter">🛒 Cart <span id="cartCount">0</span></div>
+  </div>
+</header>
+
+<div class="hero">
+  <h2>Shop the Collection</h2>
+  <p>Electronics, stationery, and clothing — all in one place.</p>
+  <div class="controls">
+    <input type="text" id="search" placeholder="🔍  Search products…">
+    <select id="categoryFilter"><option value="all">All Categories</option></select>
+    <select id="sortFilter">
+      <option value="default">Sort by</option>
+      <option value="price-asc">Price: Low → High</option>
+      <option value="price-desc">Price: High → Low</option>
+    </select>
+  </div>
+</div>
+
+<main id="productList"></main>
+
+<div id="cartPopup" class="cart-popup hidden">
+  <div class="cart-header">
+    <h2>🛒 Your Cart</h2>
+    <button id="closeCart">✕</button>
+  </div>
+  <ul id="cartItems"></ul>
+  <div class="cart-footer">
+    <div id="cartTotal"></div>
+    <button id="checkoutBtn">Place Order</button>
+  </div>
+</div>
+
+<button id="chatToggle" title="AI Assistant">🤖</button>
+
+<div id="chatbot" class="chatbot hidden">
+  <div class="chat-header">
+    <div class="chat-avatar">🤖</div>
+    <div>
+      <h4>Smart Assistant</h4>
+      <p>AI-powered shopping help</p>
+    </div>
+  </div>
+  <div class="chat-messages" id="chatMessages">
+    <div class="chat-msg bot">Hi! Ask me to recommend products, find the cheapest item, or anything about the store 🛍️</div>
+  </div>
+  <div class="chat-input-row">
+    <input type="text" id="chatInput" placeholder="Ask something…">
+    <button id="chatBtn">➤</button>
+  </div>
+</div>
+
+<div id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
