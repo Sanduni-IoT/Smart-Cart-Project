@@ -137,8 +137,3 @@ SmartCart/
 │── images/  
 
 ---
-
-## 👩‍💻 Author
-
-SmartCart Development Team  
-GitHub: https://github.com/Sanduni-IoT
