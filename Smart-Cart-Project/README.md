@@ -138,12 +138,6 @@ SmartCart/
 
 ---
 
-## 🌐 Live Demo
-
-https://sanduni-iot.github.io/Smart-Cart-Project/
-
----
-
 ## 👩‍💻 Author
 
 SmartCart Development Team  
